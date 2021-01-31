@@ -14,26 +14,12 @@
 
 [<ins>**link**</ins>](google.com)
 
-$$ \int_{0}^{10} e^{-x} \; dx $$
-
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-bl { color: blue}
-</style>
-
-- <r>Todo</r> - <o>Todito</o> - <g>Todote</g> - <bl>Todote</bl>
----
-
-<center>
 
 | Coso | Otra cosa |
 |--- | ---| 
 | Tablas | En markdown |
 
-</center>
-#### Checklist
+### Checklist
 
 [X] Hola gente
 [ ] Hola otra vez
@@ -57,3 +43,15 @@ bl { color: blue}
 - pill :pill:
 - warning :warning:
 - notebook :notebook:
+- white_check_mark :white_check_mark:
+- heavy_check_mark :heavy_check_mark:
+
+```python
+def Hola_gente:
+    print("String de prueba")
+```
+
+```ruby
+def Saludos
+    puts "Hola gente"
+end
