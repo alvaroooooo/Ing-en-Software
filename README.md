@@ -1,5 +1,4 @@
 # Apuntes de Ingeniería de Software
----
 ## Cosas importantes
 ### Otro subtitulo
 
