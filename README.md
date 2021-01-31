@@ -21,8 +21,8 @@
 
 ### Checklist
 
-[X] Hola gente
-[ ] Hola otra vez
+- [X] Hola gente
+- [ ] Hola otra vez
 
 #### Además se pueden hacer muchos emojis
 
