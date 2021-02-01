@@ -1,5 +1,4 @@
 # Apuntes de Ingeniería de Software
----
 ## Cosas importantes
 ### Otro subtitulo
 
@@ -21,8 +20,8 @@
 
 ### Checklist
 
-[X] Hola gente
-[ ] Hola otra vez
+- [X] Hola gente
+- [ ] Hola otra vez
 
 #### Además se pueden hacer muchos emojis
 
