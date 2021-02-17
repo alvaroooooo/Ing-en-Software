@@ -2,7 +2,7 @@ class Curso
     attr_accessor :informacion, :sigla
     def initialize(sigla, informacion)
         @sigla = sigla 
-        @informacion = informacion
+        @informacion = informacion.to_h{ |id, nota| [id, nota] }
         # Info es una hash table que contiene id : nota_alumno
     end
 
@@ -24,26 +24,25 @@ class Curso
     end
     
     def top_n_notas(cantidad_req)
+        if cantidad_req > informacion.length
+            cantidad_req = informacion.length
+        end
         notas_orden = informacion.values.sort.reverse
         p notas_orden
         puts notas_orden.slice(0,cantidad_req)
     end
 
     def alumnos_reprobados
-        list_reprobados = Array.new
+        lista_reprobados = Array.new
         informacion.each do |id, nota|
             if nota <= 4
-                list_reprobados.append("#{id} con un #{nota}")
+                lista_reprobados.append("#{id} con un #{nota}")
             end
         end
-        puts list_reprobados
+        puts lista_reprobados
+    end
+
+    def inspect
+        "Curso #{sigla}"
     end
 end
-
-# Clase de prueba 
-curso = Curso.new("ICS2313", {"1231" => 5.2, "1432" => 6, "5432" => 5.5, "9231" => 3.2, "4141" => 3.8})
-
-curso.mejor_nota
-curso.nota_promedio
-curso.top_n_notas(2)
-curso.alumnos_reprobados

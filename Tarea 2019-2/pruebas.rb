@@ -1,25 +1,24 @@
+# Las funciones con sus respectivos argumentos
+# Los argumentos sirven para redirigir las respuestas
+# En alumno pide el id_alumno
+# En curso pide la sigla del curso
+# En main se pide nose 
 
-class Numero
-    attr_reader :num
-    def initialize(num)
-        @num = num
-    end
-    
-    def inspect
-        "#{num}"
-    end
-end
+funciones = {
+    "cursos_aprobados" => [1, "alumno"],
+    "cursos_reprobados" => [1, "alumno"],
+    "cantidad_de_alumnos" => [1, "curso"],
+    "mejor_nota" => [1, "curso"],
+    "nota_promedio" => [1, "curso"],
+    "top_n_notas" => [2, "curso"],
+    "alumnos_aprobados" => [1, "curso"],
+    "profesor_con_mas_alumnos" => [0, "main"],
+    "cantidad_de_alumnos_sin_reprobar_ramos" => [0, "main"],
+    "porcentaje_de_cursos_con_promedio_sobre" => [1, "main"],
+    "ejecutar_programa" => [0, "main"],
+    "error_csv" => [0, "main"]
+}
 
-
-num_1 = Numero.new(1)
-num_2 = Numero.new(2)
-num_3 = Numero.new(5)
-
-puts num_1.num
-lista = [num_1, num_3, num_2]
-
-
-coso = lista.sort_by { |obj| obj.num }
-print coso
+msj_error = "*** ERROR EN LA CONSULTA ***"
 
 
