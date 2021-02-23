@@ -42,9 +42,8 @@ class Alumno < Persona
     end
 
     def anadir_notas(sigla_notas)
-        sigla_notas.each do |sigla, nota|
-            cursos_notas[sigla] = nota.to_f
-        end
+        sigla, notas = sigla_notas
+        cursos_notas[sigla] = notas.to_f
     end
 end
 

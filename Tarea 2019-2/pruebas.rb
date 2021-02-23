@@ -2,9 +2,8 @@
 # Los argumentos sirven para redirigir las respuestas
 # En alumno pide el id_alumno
 # En curso pide la sigla del curso
-# En main se pide nose 
 
-funciones = {
+@funciones = {
     "cursos_aprobados" => [1, "alumno"],
     "cursos_reprobados" => [1, "alumno"],
     "cantidad_de_alumnos" => [1, "curso"],
@@ -19,6 +18,5 @@ funciones = {
     "error_csv" => [0, "main"]
 }
 
-msj_error = "*** ERROR EN LA CONSULTA ***"
 
 
