@@ -53,4 +53,5 @@ def Hola_gente:
 ```ruby
 def Saludos
     puts "Hola gente"
+    p "Hola people"
 end
